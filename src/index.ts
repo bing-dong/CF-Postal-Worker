@@ -16,8 +16,8 @@ app.post('/send', async (c) => {
     if (!body['subject'] || !body['body']) {
         c.status(400)
         return c.json({
-            "status": "error",
-            "message": "Missing subject or body"
+            "status": "error"
+            // "message": "Missing subject or body"
         })
     }
 
